@@ -3,7 +3,7 @@ module Octokit
 
     # Methods for the Feeds API
     #
-    # @see http://developer.github.com/v3/activity/feeds/
+    # @see https://developer.github.com/v3/activity/feeds/
     module Feeds
 
       # List Feeds
@@ -12,14 +12,14 @@ module Octokit
       # for more information.
       #
       # @return [Array<Sawyer::Resource>] list of feeds
-      # @see http://developer.github.com/v3/activity/feeds/#list-feeds
+      # @see https://developer.github.com/v3/activity/feeds/#list-feeds
       def feeds
         get "feeds"
       end
 
       # Get a Feed by name
       #
-      # @param [Symbol, String] Name of feed to retrieve.
+      # @param name [Symbol, String] Name of feed to retrieve.
       # @return [Feed] Parsed feed in the format returned by the configured
       #   parser.
       def feed(name, options = {})
